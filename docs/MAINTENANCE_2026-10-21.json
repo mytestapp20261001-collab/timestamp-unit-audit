@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "repository_id": 1412860207,
+  "base_commit": "7fdb0eaefce96161a96220cfc35c57b367ea9203",
+  "date": "2026-10-21",
+  "scope": "Authorized maintenance after the fixed migration acceptance; original MIGRATION.json is unchanged. No experiment allocation or promotional text changed.",
+  "changes": [
+    {
+      "path": "test_tool.py",
+      "original_sha256": "789398798f5d84eb9cabd0465eb5266b5e31f427f7294d88f2db87cc1e6f9976",
+      "current_sha256": "39174849462fd0ae1e65ee87d90def9c6b342abb5ea35d568580fe1a1b26f8ad",
+      "reason": "Regression coverage and maintenance-receipt rejection tests."
+    },
+    {
+      "path": "tool.py",
+      "original_sha256": "94ea5d3ddb53f41687eeaaeca371df5c65915e40437febda705ddbf2296b07b9",
+      "current_sha256": "ab0e6b82e9e3d789fbee38fb1e49d0adfb267d03f23b109bc9cc48236f9c51c3",
+      "reason": "Isolate Decimal construction from caller traps; preserve strict JSON/TOML parsing and deterministic rounding semantics."
+    }
+  ]
+}
